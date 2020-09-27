@@ -21,13 +21,11 @@ exists a Morty who says everything backwards.
 
 // Include the Morty header file
 #include "Morty.hpp"
+#include <string>
 #include <iostream>
 
 int main(int ac, char** av) {
-	// Parse the command line arguments. The program is executed as
-	// ./AwwGeezMan {start} {stop} {dimension}
-	// or 
-	// ./AwwGeezMan {start} {stop} {step} {dimension}
+
 	if (ac != 4 and ac != 5) {
 		std::cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)"
 			<< std::endl;
@@ -51,10 +49,14 @@ int main(int ac, char** av) {
 
 			}
 
-			if (av[3] == "Z286") {
+			else if (av[3] == "Z286") {
 
 				Z286::Morty(start, stop);
 
+			}
+			
+			else {
+				return -1;
 			}
 
 
@@ -73,10 +75,14 @@ int main(int ac, char** av) {
 
 			}
 
-			if (av[3] == "Z286") {
+			else if (av[3] == "Z286") {
 
 				Z286::MortyStep(start, stop, step);
 
+			}
+			
+			else {
+				return -1;
 			}
 
 		}
