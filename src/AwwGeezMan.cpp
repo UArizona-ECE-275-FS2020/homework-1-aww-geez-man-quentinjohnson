@@ -21,28 +21,76 @@ exists a Morty who says everything backwards.
 
 // Include the Morty header file
 #include "Morty.hpp"
+#include <iostream>
 
-
-int main (int ac, char** av) {
+int main(int ac, char** av) {
 	// Parse the command line arguments. The program is executed as
 	// ./AwwGeezMan {start} {stop} {dimension}
 	// or 
 	// ./AwwGeezMan {start} {stop} {step} {dimension}
 	if (ac != 4 and ac != 5) {
-		std::cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)" 
+		std::cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)"
 			<< std::endl;
 		std::cout << "(1)\t./AwwGeezMan {start} {stop} {dimension}" << std::endl;
 		std::cout << "(2)\t./AwwGeezMan {start} {stop} {step} {dimension}" << std::endl;
-		
+
 		return -1;
 	}
-	
-	// Parse the command line arguments
-	
+
+	else {
+
+		if ((ac == 4)) {
+			//Pass through Morty function. Determine which dimension first
+
+			int start = std::atoi(av[1]);
+			int stop = std::atoi(av[2]);
+
+			if (av[3] == "C137") {
+
+				C137::Morty(start, stop);
+
+			}
+
+			if (av[3] == "Z286") {
+
+				Z286::Morty(start, stop);
+
+			}
+
+
+		}
+
+		else if ((ac == 5)) {
+			//Pass through MortyStep function. determine which dimension first
 		
+			int start = std::atoi(av[1]);
+			int stop = std::atoi(av[2]);
+			int step = std::atoi(av[3]);
+
+			if (av[3] == "C137") {
+
+				C137::MortyStep(start, stop, step);
+
+			}
+
+			if (av[3] == "Z286") {
+
+				Z286::MortyStep(start, stop, step);
+
+			}
+
+		}
+
+		else {
+			return -1;
+		}
+
+	}
+
+
 	// Depending on the dimension of the arguments, call the appropriate Morty
 	// function
-	
-	
+
+
 	return 0;
 }
