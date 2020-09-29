@@ -8,7 +8,7 @@
 */
 
 // Include the Morty header file
-#include "Morty.hpp"
+#include "Morty.h"
 #include <string>
 #include <iostream>
 
