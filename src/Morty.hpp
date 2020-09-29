@@ -18,7 +18,7 @@
 namespace C137 {
 
 	void Morty(int start, int stop);
-	void MortyStep(int start, int stop, int step);
+	void Morty(int start, int stop, int step);
 }
 
 
@@ -30,5 +30,5 @@ namespace C137 {
 namespace Z286 {
 
 	void Morty(int start, int stop);
-	void MortyStep(int start, int stop, int step);
+	void Morty(int start, int stop, int step);
 }
