@@ -24,7 +24,7 @@ namespace C137 {
 
 	void Morty(int start, int stop, int step) {
 
-		std::cout << "Morty C137 says: " << std::endl;
+		std::cout << "Morty C137 says:" << std::endl;
 
 		for (int i = start; i <= stop; i+= step) {
 
@@ -66,7 +66,7 @@ namespace Z286 {
 
 	void Morty(int start, int stop, int step) {
 
-		std::cout << "Morty Z286 says: " << std::endl;
+		std::cout << "Morty Z286 says:" << std::endl;
 
 		for (int i = start; i <= stop; i += step) {
 
