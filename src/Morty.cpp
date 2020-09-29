@@ -9,7 +9,7 @@
 
 // Include the Morty header file
 #include "Morty.h"
-#include <string>
+#include <string.h>
 #include <iostream>
 
 
