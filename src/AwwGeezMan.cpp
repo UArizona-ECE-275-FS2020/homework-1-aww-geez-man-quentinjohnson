@@ -20,7 +20,7 @@ exists a Morty who says everything backwards.
 */
 
 // Include the Morty header file
-#include "Morty.hpp"
+#include "Morty.h"
 #include <string>
 #include <iostream>
 
