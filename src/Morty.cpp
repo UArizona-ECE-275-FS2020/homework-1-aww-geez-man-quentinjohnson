@@ -44,7 +44,7 @@ namespace C137 {
 			}
 
 			else {
-				std::cout << i << ":" << std::endl;
+				std::cout << i << ": " << std::endl;
 			}
 			
 
@@ -86,7 +86,7 @@ namespace Z286 {
 			}
 
 			else {
-				std::cout << i << ":" << std::endl;
+				std::cout << i << ": " << std::endl;
 			}
 
 
